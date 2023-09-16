@@ -2,6 +2,7 @@
 using namespace std;
 
 int recurs_func(int number){
+    // если число больше 1, вызываем функцию рекурсивно, передавая в качестве аргумента число/2
     if(number > 1)
         recurs_func(number/2);
     cout << number % 2;
@@ -9,6 +10,7 @@ int recurs_func(int number){
 }
 
 int main(){
+    // Просим ввести число, инициализируем int number, вызываем рекурсивную функцию
     cout << "Enter n: ";
     int number;
     cin >> number;
