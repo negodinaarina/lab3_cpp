@@ -3,8 +3,8 @@
 # include <conio.h>
 # include <math.h>
 using namespace std;
-
-double summa(double x)
+//Функция подсчета корня по формуле
+double sqrt_f(double x)
 {
     float y, y1;
     y = x;
@@ -24,5 +24,5 @@ int main()
     cin >> x;
     a = pow(x, 1.0 / 3);
     cout << "\nSquare root via pow function " << a << endl;
-    cout << "Square root via iteration " << summa(x);
+    cout << "Square root via iteration " << sqrt_f(x);
 }
